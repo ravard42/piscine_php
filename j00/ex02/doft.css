@@ -1,0 +1,191 @@
+body
+{
+	background : #606060;
+}
+
+
+#conteneur
+{
+	width : 1000px;
+	margin : auto;
+}
+
+header
+{
+	position : relative;
+	top : 10px;
+	background : #909090;
+	border-radius : 10px;
+	box-shadow : 6px 6px 0 black;
+}
+
+
+#doft
+{
+	position : relative;
+	left : 10px;
+}
+
+#loupe
+{
+	position : absolute;
+	right : 25px;
+	bottom : -20px;
+}
+
+#reload
+{
+	position : absolute;
+	right : 0;
+	top : 5px;
+	right : 5px;
+}
+
+#close
+{
+	position : absolute;
+	right : 5px;
+	bottom : 0;
+}
+
+section
+{
+	margin-left : 5px;
+	margin-right : 5px;
+	position : relative;
+	top : 20px;
+	display : flex;
+	justify-content : space-around;
+	height : 650px;
+}
+
+#nav_g
+{	
+	width :10%; 
+	height : 75%; 
+	margin-left : 5px;
+	background : #909090;
+	border-radius : 10px;
+	box-shadow : 6px 6px 0 black;
+	display : flex;
+	flex-direction : column;
+}
+
+.gauche
+{
+	width : 55px;
+	height : 55px;
+	margin : auto;
+}
+
+#cluster
+{
+	position : relative;
+	width : 72%;
+	background : #909090;
+	border-radius : 10px;
+	box-shadow : 6px 6px 0 black;
+}
+
+#cluster_img
+{
+	width : 98%;
+	height : 98%;
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+	position : absolute;
+	top : 50%;
+	transform : translateY(-50%);
+}
+
+#ikea
+{
+	display : block;
+	width : 100px;
+	height : 200px;
+	position : absolute;
+	top : 400px;
+	left : 220px;
+}
+
+#apple
+{
+	display : block;
+	width : 150px;
+	height : 150px;
+	position : absolute;
+	top : 370px;
+	left :550px;
+}
+
+#sweety
+{
+	width : 50%;
+	height : 19%;
+	position : absolute;
+	bottom : -80px;
+	left : -150px;
+	background : #a8fc97;
+	border-radius : 10px;
+	box-shadow : 6px 6px 0 black;	
+}
+
+p
+{
+	position : relative;
+	left : 5px;
+	top : -10px;
+	font-size : 13px;
+	font-family : "Arial";
+}
+
+strong
+{
+	font-size : 25px;
+	font-weight : normal;
+}
+
+span
+{
+	text-shadow : 4px 4px 3px red;
+}
+
+#nav_d
+{	
+	width : 10%;
+	height : 75%; 
+	margin-right : 5px;
+	background : #909090;
+	border-radius : 10px;
+	box-shadow : 6px 6px 0 black;
+}
+
+.droite
+{
+	position :relative;
+	top : 20px;
+	width : 55px;
+	height : 55px;
+	margin : auto;
+	margin-bottom : 50px;
+}
+
+.droite:nth-child(1)
+{
+	position : relative;	
+	left : -5px;
+}
+
+.droite:nth-child(2)
+{
+	position : relative;	
+	left : -5px;
+}
+
+.droite:nth-child(3)
+{
+	width : 90px;
+	height : 72px;
+	background : url("./resources/nav_d/3.jpg");
+}

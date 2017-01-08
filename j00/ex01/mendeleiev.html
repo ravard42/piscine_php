@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body
+			{
+				background-image : url("http://wallpapercave.com/wp/wp1812371.jpg");
+				background-repeat : no-repeat;
+				background-color : black;
+			}
+			table
+			{
+				margin : auto;
+			}
+			.periodique
+			{
+				margin-top : 150px;
+			}
+			tr
+			{
+				display : flex;
+				justify-content : space-around;
+			}
+			.print
+			{
+				width : 60px;
+				height : 60px;
+				margin : 2px 2px;
+				display : flex;
+				flex-direction : column;
+				border : 1px solid black;
+				opacity : 0.9;
+			}
+			.no-print
+			{
+				width : 60px;
+				height : 60px;
+				margin : 2px 2px;
+				display : flex;
+				flex-direction : column;
+				border : 1px solid white;
+				opacity : 0;
+			}
+			.masse
+			{
+				text-align : right;
+				font-size : small;
+				flex : 1;
+			}
+			.symbole
+			{
+				text-align : center;
+				font-size : large;
+				font-weight : bold;
+				flex : 1;
+			}
+			.z
+			{
+				font-size : small;
+				flex : 1;
+			}	
+			.color_tab
+			{
+				margin-top : 45px;
+			}
+			.legende
+			{
+				width : 110px;
+				height : 40px;
+				border : 1px solid black;
+				text-align : center;
+				font-weight : bold;
+			}
+			#orange, #z3, #z11, #z19, #z37, #z55, #z87
+			{
+				background : orange;
+			}
+			#yellow, #z4, #z12, #z20, #z38, #z56, #z88
+			{
+				background : yellow;
+			}
+			#fuchsia, #z57bis, #z57, #z58, #z59, #z60, #z61, #z62, #z63, #z64, #z65, #z66, #z67, #z68, #z69, #z70, #z71
+			{
+				background : fuchsia;
+			}
+			#purple, #z89bis, #z89, #z90, #z91, #z92, #z93, #z94, #z95, #z96, #z97, #z98, #z99, #z100, #z101, #z102, #z103
+			{
+				background : purple;
+			}
+			#olive, #z21, #z22, #z23, #z24, #z25, #z26, #z27, #z28, #z29, #z30, #z39, #z40, #z41, #z42, #z43, #z44, #z45, #z46, #z47, #z48, #z72, #z73, #z74, #z75, #z76, #z77, #z78, #z79, #z80, #z104, #z105, #z106, #z107, #z108, #z109, #z110, #z111, #z112
+			{
+				background : olive;
+			}
+			#teal, #z13, #z31, #z49, #z50, #z81, #z82, #z83, #z113, #z114, #z115, #z116
+			{
+				background : teal;
+			}
+			#aqua, #z5, #z14, #z32, #z33, #z51, #z52, #z84
+			{
+				background : aqua;
+			}
+			#green, #z1, #z6, #z7, #z8, #z15, #z16, #z34
+			{
+				background : green;
+			}
+			#lime, #z9, #z17, #z35, #z53, #z85, #z117
+			{
+				background : lime;
+			}
+			#blue, #z2, #z10, #z18, #z36, #z54, #z86, #z118
+			{
+				background : blue;
+			}
+		</style>
+		<title>Tableau p&eacute;riodique des &eacute;l&eacute;ments</title>
+	</head>
+	<body>
+		<table class="periodique">
+			<tr>
+				<td class="print" id="z1">
+					<div class="masse">1.008</div>
+					<div class="symbole">H</div>
+					<div class="z">1</div>
+				</td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="print" id="z2">
+					<div class="masse">4.002</div>
+					<div class="symbole">He</div>
+					<div class="z">2</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="print" id="z3">
+					<div class="masse">6.94</div>
+					<div class="symbole">Li</div>
+					<div class="z">3</div>
+				</td>
+				<td class="print" id="z4">
+					<div class="masse">9.012</div>
+					<div class="symbole">Be</div>
+					<div class="z">4</div>
+				</td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="print" id="z5">
+					<div class="masse">10.81</div>
+					<div class="symbole">B</div>
+					<div class="z">5</div>
+				</td>
+				<td class="print" id="z6">
+					<div class="masse">12.01</div>
+					<div class="symbole">C</div>
+					<div class="z">6</div>
+				</td>
+				<td class="print" id="z7">
+					<div class="masse">14.01</div>
+					<div class="symbole">N</div>
+					<div class="z">7</div>
+				</td>
+				<td class="print" id="z8">
+					<div class="masse">16.00</div>
+					<div class="symbole">O</div>
+					<div class="z">8</div>
+				</td>
+				<td class="print" id="z9">
+					<div class="masse">19.00</div>
+					<div class="symbole">F</div>
+					<div class="z">9</div>
+				</td>
+				<td class="print" id="z10">
+					<div class="masse">20.18</div>
+					<div class="symbole">Ne</div>
+					<div class="z">10</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="print" id="z11">
+					<div class="masse">22.99</div>
+					<div class="symbole">Na</div>
+					<div class="z">11</div>
+				</td>
+				<td class="print" id="z12">
+					<div class="masse">24.31</div>
+					<div class="symbole">Mg</div>
+					<div class="z">12</div>
+				</td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="print" id="z13">
+					<div class="masse">26.98</div>
+					<div class="symbole">Al</div>
+					<div class="z">13</div>
+				</td>
+				<td class="print" id="z14">
+					<div class="masse">28.09</div>
+					<div class="symbole">Si</div>
+					<div class="z">14</div>
+				</td>
+				<td class="print" id="z15">
+					<div class="masse">30.97</div>
+					<div class="symbole">P</div>
+					<div class="z">15</div>
+				</td>
+				<td class="print" id="z16">
+					<div class="masse">32.06</div>
+					<div class="symbole">S</div>
+					<div class="z">16</div>
+				</td>
+				<td class="print" id="z17">
+					<div class="masse">35.45</div>
+					<div class="symbole">Cl</div>
+					<div class="z">17</div>
+				</td>
+				<td class="print" id="z18">
+					<div class="masse">39.95</div>
+					<div class="symbole">Ar</div>
+					<div class="z">18</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="print" id="z19">
+					<div class="masse">39.10</div>
+					<div class="symbole">K</div>
+					<div class="z">19</div>
+				</td>
+				<td class="print" id="z20">
+					<div class="masse">40.08</div>
+					<div class="symbole">Ca</div>
+					<div class="z">20</div>
+				</td>
+				<td class="print" id="z21">
+					<div class="masse">44.96</div>
+					<div class="symbole">Sc</div>
+					<div class="z">21</div>
+				</td>
+				<td class="print "id="z22">
+					<div class="masse">47.87</div>
+					<div class="symbole">Ti</div>
+					<div class="z">22</div>
+				</td>
+				<td class="print" id="z23">
+					<div class="masse">50.94</div>
+					<div class="symbole">V</div>
+					<div class="z">23</div>
+				</td>
+				<td class="print" id="z24">
+					<div class="masse">52.00</div>
+					<div class="symbole">Cr</div>
+					<div class="z">24</div>
+				</td>
+				<td class="print" id="z25">
+					<div class="masse">54.94</div>
+					<div class="symbole">Mn</div>
+					<div class="z">25</div>
+				</td>
+				<td class="print" id="z26">
+					<div class="masse">55.85</div>
+					<div class="symbole">Fe</div>
+					<div class="z">26</div>
+				</td>
+				<td class="print" id="z27">
+					<div class="masse">58.93</div>
+					<div class="symbole">Co</div>
+					<div class="z">27</div>
+				</td>
+				<td class="print" id="z28">
+					<div class="masse">58.69</div>
+					<div class="symbole">Ni</div>
+					<div class="z">28</div>
+				</td>
+				<td class="print" id="z29">
+					<div class="masse">63.55</div>
+					<div class="symbole">Cu</div>
+					<div class="z">29</div>
+				</td>
+				<td class="print" id="z30">
+					<div class="masse">65.38</div>
+					<div class="symbole">Zn</div>
+					<div class="z">30</div>
+				</td>
+				<td class="print" id="z31">
+					<div class="masse">69.72</div>
+					<div class="symbole">Ga</div>
+					<div class="z">31</div>
+				</td>
+				<td class="print" id="z32">
+					<div class="masse">72.63</div>
+					<div class="symbole">Ge</div>
+					<div class="z">32</div>
+				</td>
+				<td class="print" id="z33">
+					<div class="masse">74.92</div>
+					<div class="symbole">As</div>
+					<div class="z">33</div>
+				</td>
+				<td class="print" id="z34">
+					<div class="masse">79.96</div>
+					<div class="symbole">Se</div>
+					<div class="z">34</div>
+				</td>
+				<td class="print" id="z35">
+					<div class="masse">79.90</div>
+					<div class="symbole">Br</div>
+					<div class="z">35</div>
+				</td>
+				<td class="print" id="z36">
+					<div class="masse">83.80</div>
+					<div class="symbole">Kr</div>
+					<div class="z">36</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="print" id="z37">
+					<div class="masse">85.47</div>
+					<div class="symbole">Rb</div>
+					<div class="z">37</div>
+				</td>
+				<td class="print" id="z38">
+					<div class="masse">87.62</div>
+					<div class="symbole">Sr</div>
+					<div class="z">38</div>
+				</td>
+				<td class="print" id="z39">
+					<div class="masse">88.91</div>
+					<div class="symbole">Y</div>
+					<div class="z">39</div>
+				</td>
+				<td class="print" id="z40">
+					<div class="masse">91.22</div>
+					<div class="symbole">Zr</div>
+					<div class="z">40</div>
+				</td>
+				<td class="print" id="z41">
+					<div class="masse">92.91</div>
+					<div class="symbole">Nb</div>
+					<div class="z">41</div>
+				</td>
+				<td class="print" id="z42">
+					<div class="masse">95.96</div>
+					<div class="symbole">Mo</div>
+					<div class="z">42</div>
+				</td>
+				<td class="print" id="z43">
+					<div class="masse">98</div>
+					<div class="symbole">Tc</div>
+					<div class="z">43</div>
+				</td>
+				<td class="print" id="z44">
+					<div class="masse">101.1</div>
+					<div class="symbole">Ru</div>
+					<div class="z">44</div>
+				</td>
+				<td class="print" id="z45">
+					<div class="masse">102.9</div>
+					<div class="symbole">Rh</div>
+					<div class="z">45</div>
+				</td>
+				<td class="print" id="z46">
+					<div class="masse">106.4</div>
+					<div class="symbole">Pd</div>
+					<div class="z">46</div>
+				</td>
+				<td class="print" id="z47">
+					<div class="masse">107.9</div>
+					<div class="symbole">Ag</div>
+					<div class="z">47</div>
+				</td>
+				<td class="print" id="z48">
+					<div class="masse">112.4</div>
+					<div class="symbole">Cd</div>
+					<div class="z">48</div>
+				</td>
+				<td class="print" id="z49">
+					<div class="masse">114.8</div>
+					<div class="symbole">In</div>
+					<div class="z">49</div>
+				</td>
+				<td class="print" id="z50">
+					<div class="masse">118.7</div>
+					<div class="symbole">Sn</div>
+					<div class="z">50</div>
+				</td>
+				<td class="print" id="z51">
+					<div class="masse">121.8</div>
+					<div class="symbole">Sb</div>
+					<div class="z">51</div>
+				</td>
+				<td class="print" id="z52">
+					<div class="masse">127.6</div>
+					<div class="symbole">Te</div>
+					<div class="z">52</div>
+				</td>
+				<td class="print" id="z53">
+					<div class="masse">126.9</div>
+					<div class="symbole">I</div>
+					<div class="z">53</div>
+				</td>
+				<td class="print" id="z54">
+					<div class="masse">131.3</div>
+					<div class="symbole">Xe</div>
+					<div class="z">54</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="print" id="z55">
+					<div class="masse">132.9</div>
+					<div class="symbole">Cs</div>
+					<div class="z">55</div>
+				</td>
+				<td class="print" id="z56">
+					<div class="masse">137.3</div>
+					<div class="symbole">Ba</div>
+					<div class="z">56</div>
+				</td>
+				<td class="print" id="z57bis">
+					<div class="masse">*</div>
+					<div class="symbole">*</div>
+					<div class="z">57-71</div>
+				</td>
+				<td class="print" id="z72">
+					<div class="masse">178.5</div>
+					<div class="symbole">Hf</div>
+					<div class="z">72</div>
+				</td>
+				<td class="print" id="z73">
+					<div class="masse">181.0</div>
+					<div class="symbole">Ta</div>
+					<div class="z">73</div>
+				</td>
+				<td class="print" id="z74">
+					<div class="masse">183.9</div>
+					<div class="symbole">W</div>
+					<div class="z">74</div>
+				</td>
+				<td class="print" id="z75">
+					<div class="masse">186.2</div>
+					<div class="symbole">Re</div>
+					<div class="z">75</div>
+				</td>
+				<td class="print" id="z76">
+					<div class="masse">190.2</div>
+					<div class="symbole">Os</div>
+					<div class="z">76</div>
+				</td>
+				<td class="print" id="z77">
+					<div class="masse">192.2</div>
+					<div class="symbole">Ir</div>
+					<div class="z">77</div>
+				</td>
+				<td class="print" id="z78">
+					<div class="masse">195.1</div>
+					<div class="symbole">Pt</div>
+					<div class="z">78</div>
+				</td>
+				<td class="print" id="z79">
+					<div class="masse">197.0</div>
+					<div class="symbole">Au</div>
+					<div class="z">79</div>
+				</td>
+				<td class="print" id="z80">
+					<div class="masse">200.6</div>
+					<div class="symbole">Hg</div>
+					<div class="z">80</div>
+				</td>
+				<td class="print" id="z81">
+					<div class="masse">204.4</div>
+					<div class="symbole">Tl</div>
+					<div class="z">81</div>
+				</td>
+				<td class="print" id="z82">
+					<div class="masse">207.2</div>
+					<div class="symbole">Pb</div>
+					<div class="z">82</div>
+				</td>
+				<td class="print" id="z83">
+					<div class="masse">209.0</div>
+					<div class="symbole">Bi</div>
+					<div class="z">83</div>
+				</td>
+				<td class="print" id="z84">
+					<div class="masse">209</div>
+					<div class="symbole">Po</div>
+					<div class="z">84</div>
+				</td>
+				<td class="print" id="z85">
+					<div class="masse">210</div>
+					<div class="symbole">At</div>
+					<div class="z">85</div>
+				</td>
+				<td class="print" id="z86">
+					<div class="masse">222</div>
+					<div class="symbole">Rn</div>
+					<div class="z">86</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="print" id="z87">
+					<div class="masse">223</div>
+					<div class="symbole">Fr</div>
+					<div class="z">87</div>
+				</td>
+				<td class="print" id="z88">
+					<div class="masse">226</div>
+					<div class="symbole">Ra</div>
+					<div class="z">88</div>
+				</td>
+				<td class="print" id="z89bis">
+					<div class="masse">*</div>
+					<div class="symbole">*</div>
+					<div class="z">89-103</div>
+				</td>
+				<td class="print" id="z104">
+					<div class="masse">267</div>
+					<div class="symbole">Rf</div>
+					<div class="z">104</div>
+				</td>
+				<td class="print" id="z105">
+					<div class="masse">268</div>
+					<div class="symbole">Db</div>
+					<div class="z">105</div>
+				</td>
+				<td class="print" id="z106">
+					<div class="masse">271</div>
+					<div class="symbole">Sg</div>
+					<div class="z">106</div>
+				</td>
+				<td class="print" id="z107">
+					<div class="masse">272</div>
+					<div class="symbole">Bh</div>
+					<div class="z">107</div>
+				</td>
+				<td class="print" id="z108">
+					<div class="masse">270</div>
+					<div class="symbole">Hs</div>
+					<div class="z">108</div>
+				</td>
+				<td class="print" id="z109">
+					<div class="masse">276</div>
+					<div class="symbole">Mt</div>
+					<div class="z">109</div>
+				</td>
+				<td class="print" id="z110">
+					<div class="masse">281</div>
+					<div class="symbole">Ds</div>
+					<div class="z">110</div>
+				</td>
+				<td class="print" id="z111">
+					<div class="masse">280</div>
+					<div class="symbole">Rg</div>
+					<div class="z">111</div>
+				</td>
+				<td class="print" id="z112">
+					<div class="masse">285</div>
+					<div class="symbole">Cn</div>
+					<div class="z">112</div>
+				</td>
+				<td class="print" id="z113">
+					<div class="masse">284</div>
+					<div class="symbole">Nh</div>
+					<div class="z">113</div>
+				</td>
+				<td class="print" id="z114">
+					<div class="masse">289</div>
+					<div class="symbole">Fl</div>
+					<div class="z">114</div>
+				</td>
+				<td class="print" id="z115">
+					<div class="masse">288</div>
+					<div class="symbole">Mc</div>
+					<div class="z">115</div>
+				</td>
+				<td class="print" id="z116">
+					<div class="masse">293</div>
+					<div class="symbole">Lv</div>
+					<div class="z">116</div>
+				</td>
+				<td class="print" id="z117">
+					<div class="masse">294</div>
+					<div class="symbole">Ts</div>
+					<div class="z">117</div>
+				</td>
+				<td class="print" id="z118">
+					<div class="masse">294</div>
+					<div class="symbole">Og</div>
+					<div class="z">118</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+			</tr>
+			<tr>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="print" id="z57">
+					<div class="masse">138.9</div>
+					<div class="symbole">La</div>
+					<div class="z">57</div>
+				</td>
+				<td class="print" id="z58">
+					<div class="masse">140.1</div>
+					<div class="symbole">Ce</div>
+					<div class="z">58</div>
+				</td>
+				<td class="print" id="z59">
+					<div class="masse">140.9</div>
+					<div class="symbole">Pr</div>
+					<div class="z">59</div>
+				</td>
+				<td class="print" id="z60">
+					<div class="masse">144.2</div>
+					<div class="symbole">Nd</div>
+					<div class="z">60</div>
+				</td>
+				<td class="print" id="z61">
+					<div class="masse">145</div>
+					<div class="symbole">Pm</div>
+					<div class="z">61</div>
+				</td>
+				<td class="print" id="z62">
+					<div class="masse">150.4</div>
+					<div class="symbole">Sm</div>
+					<div class="z">62</div>
+				</td>
+				<td class="print" id="z63">
+					<div class="masse">152.0</div>
+					<div class="symbole">Eu</div>
+					<div class="z">63</div>
+				</td>
+				<td class="print" id="z64">
+					<div class="masse">157.3</div>
+					<div class="symbole">Gd</div>
+					<div class="z">64</div>
+				</td>
+				<td class="print" id="z65">
+					<div class="masse">159.0</div>
+					<div class="symbole">Tb</div>
+					<div class="z">65</div>
+				</td>
+				<td class="print" id="z66">
+					<div class="masse">162.5</div>
+					<div class="symbole">Dy</div>
+					<div class="z">66</div>
+				</td>
+				<td class="print" id="z67">
+					<div class="masse">165.0</div>
+					<div class="symbole">Ho</div>
+					<div class="z">67</div>
+				</td>
+				<td class="print" id="z68">
+					<div class="masse">167.3</div>
+					<div class="symbole">Er</div>
+					<div class="z">68</div>
+				</td>
+				<td class="print" id="z69">
+					<div class="masse">169.0</div>
+					<div class="symbole">Tm</div>
+					<div class="z">69</div>
+				</td>
+				<td class="print" id="z70">
+					<div class="masse">173.1</div>
+					<div class="symbole">Yb</div>
+					<div class="z">70</div>
+				</td>
+				<td class="print" id="z71">
+					<div class="masse">175.0</div>
+					<div class="symbole">Lu</div>
+					<div class="z">71</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="no-print"></td>
+				<td class="print" id="z89">
+					<div class="masse">227</div>
+					<div class="symbole">Aa</div>
+					<div class="z">89</div>
+				</td>
+				<td class="print" id="z90">
+					<div class="masse">232.0</div>
+					<div class="symbole">Th</div>
+					<div class="z">90</div>
+				</td>
+				<td class="print" id="z91">
+					<div class="masse">231.0</div>
+					<div class="symbole">Pa</div>
+					<div class="z">91</div>
+				</td>
+				<td class="print" id="z92">
+					<div class="masse">238.0</div>
+					<div class="symbole">U</div>
+					<div class="z">92</div>
+				</td>
+				<td class="print" id="z93">
+					<div class="masse">237</div>
+					<div class="symbole">Np</div>
+					<div class="z">93</div>
+				</td>
+				<td class="print" id="z94">
+					<div class="masse">244</div>
+					<div class="symbole">Pu</div>
+					<div class="z">94</div>
+				</td>
+				<td class="print" id="z95">
+					<div class="masse">243</div>
+					<div class="symbole">Am</div>
+					<div class="z">95</div>
+				</td>
+				<td class="print" id="z96">
+					<div class="masse">247</div>
+					<div class="symbole">Cm</div>
+					<div class="z">96</div>
+				</td>
+				<td class="print" id="z97">
+					<div class="masse">247</div>
+					<div class="symbole">Bk</div>
+					<div class="z">97</div>
+				</td>
+				<td class="print" id="z98">
+					<div class="masse">251</div>
+					<div class="symbole">Cf</div>
+					<div class="z">98</div>
+				</td>
+				<td class="print" id="z99">
+					<div class="masse">252</div>
+					<div class="symbole">Es</div>
+					<div class="z">99</div>
+				</td>
+				<td class="print" id="z100">
+					<div class="masse">257</div>
+					<div class="symbole">Fm</div>
+					<div class="z">100</div>
+				</td>
+				<td class="print" id="z101">
+					<div class="masse">258</div>
+					<div class="symbole">Md</div>
+					<div class="z">101</div>
+				</td>
+				<td class="print" id="z102">
+					<div class="masse">259</div>
+					<div class="symbole">No</div>
+					<div class="z">102</div>
+				</td>
+				<td class="print" id="z103">
+					<div class="masse">262</div>
+					<div class="symbole">Lr</div>
+					<div class="z">103</div>
+				</td>
+			</tr>
+		</table>
+		<table class="color_tab">
+			<tr>
+				<td class="legende" id="orange">M&eacute;taux alcalins</td>
+				<td class="legende" id="yellow">M&eacute;taux alcalino-terreux</td>
+				<td class="legende" id="fuchsia">Lanthanides</td>
+				<td class="legende" id="purple">Actinides</td>
+				<td class="legende" id="olive">M&eacute;taux de transition</td>
+				<td class="legende" id="teal">M&eacute;taux post-transition</td>
+				<td class="legende" id="aqua">M&eacute;tallo&iuml;des</td>
+				<td class="legende" id="green">Non-M&eacute;taux</td>
+				<td class="legende" id="lime">Halog&egrave;nes</td>
+				<td class="legende" id="blue">Gaz rares</td>
+			</tr>
+		</table>
+	</body>
+</html>

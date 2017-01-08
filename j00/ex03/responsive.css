@@ -1,0 +1,128 @@
+html, body
+{
+	width : 100%;
+	height : 100%;
+	margin : 0;
+	padding : 0;
+}
+
+#conteneur
+{
+	background : black;
+	width : 100%;
+	height : 100%;
+	position : relative;
+}
+
+img
+{
+	width : 100%;
+	height : 100%;
+}
+
+#mend_tab
+{
+	width : 80%;
+	height : 70%;
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	transform : translateY(-50%) translateX(-50%);
+}
+
+td
+{
+	border : black solid 1px;
+	position : relative;
+	opacity : 0.9
+}
+
+strong
+{
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	transform : translateX(-50%) translateY(-50%);
+	font-size : 2vw;
+}
+
+.masse
+{
+	position : absolute;
+	top : 0;
+	right : 0;
+	font-size : 1vw;
+}
+
+.z
+{
+	position : absolute;
+	bottom : 0;
+	left : 0;	
+	font-size : 1vw;
+}
+
+#family_tab
+{
+	width : 70%;
+	height : 5%;
+	position : absolute;
+	bottom : 0;
+	right : 0;
+	font-size : 1vw;
+}
+
+.hide
+{
+	opacity : 0;
+}
+
+.orange
+{
+	background : orange;	
+}
+
+.yellow
+{
+	background : yellow;
+}
+
+.fuchsia
+{
+	background : fuchsia;
+}
+
+.purple
+{
+	background : purple;
+}
+
+.olive
+{
+	background : olive;
+}
+
+.teal
+{
+	background : teal;
+}
+
+.aqua
+{
+	background : aqua;
+}
+
+.green
+{
+	background : green;
+}
+
+.lime
+{
+	background : lime;
+}
+
+.blue
+{
+	background : blue;
+}
