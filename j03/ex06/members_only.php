@@ -3,7 +3,7 @@
 	if($_SERVER["PHP_AUTH_USER"] === "zaz" && $_SERVER["PHP_AUTH_PW"] === "jaimelespetitsponeys")
 	{
 		$file = base64_encode(file_get_contents("../img/42.png"));
-		echo "<html><body>\nbonjour Zaz<br /><img src='data:image/png;base64,$file' />\n</body></html>\n";
+		echo "<html><body>\nBonjour Zaz<br /><img src='data:image/png;base64,$file' />\n</body></html>\n";
 	}
 	else
 	{
