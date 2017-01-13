@@ -5,8 +5,4 @@
 		echo $_COOKIE[$_GET["name"]] . "\n";
 	if ($_GET["action"] === "del")
 		setcookie($_GET["name"], "", (time() - 3600));
-
-
-	
-
 ?>
