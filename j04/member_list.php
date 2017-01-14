@@ -1,3 +1,10 @@
+<!DOCTYPE>
+<html>
+<header>
+<title>member_list</title>
+</header>
+</html>
+
 <?PHP
 	if (file_exists('./private/passwd') && $tab = unserialize(file_get_contents('./private/passwd')))
 		foreach($tab as $elem)
