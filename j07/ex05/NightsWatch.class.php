@@ -7,7 +7,7 @@ class	NightsWatch {
 			$elem->fight();
 	}
 	public function		fight() {
-		return False;
+		return 'Victory';
 	}
 
 }
