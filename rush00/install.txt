@@ -1,0 +1,1 @@
+tete1;tete;homme;tete/tete1.jpg;2;haut1;haut;homme;haut/haut1.jpg;4;haut2;haut;homme;haut/haut2.jpg;7;jambe1;jambe;homme;jambe/jambe1.jpg;4;pied1;pied;homme;pied/pied1.jpg;3;pied2;pied;femme;./pied/pied2.jpg;8
